@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import FontSizeUp from './fontSizeUp';
 import FontSizeDown from './fontSizeDown';
 
+import '../../styles/main.scss';
+
 const CHANGE_DIRECTION = {
 	UP: 'up',
 	DOWN: 'down'
@@ -108,10 +110,10 @@ class FontSizeChanger extends Component {
 	}
 
 	render() {
-		const { style } = this.props;
-
 		return (
-			<div className='font-size-changer' style={style}>
+			<div
+				className='font-size-changer'
+      >
 				<FontSizeUp onClick={this.onFontSizeUp.bind(this)} />
 				<FontSizeDown onClick={this.onFontSizeDown.bind(this)}/>
 			</div >

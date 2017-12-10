@@ -15,9 +15,9 @@ class FontSizeDown extends Component {
 	render() {
 		return (
 			<div
-				className="font-size-up"
+				className="font-size-down"
 				onClick={this.onClick}>
-				a
+				a-
 			</div>
 		);
 	}

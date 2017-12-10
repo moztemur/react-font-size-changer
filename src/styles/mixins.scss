@@ -1,0 +1,30 @@
+@mixin noselect() {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-sizing() {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit  */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko         */
+    box-sizing: border-box;
+}

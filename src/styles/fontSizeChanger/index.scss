@@ -1,0 +1,26 @@
+@import '../mixins';
+
+$width: 80px;
+
+.font-size-changer {
+    width: $width;
+    height: $width / 2;
+    
+    > div {
+        float: left;
+        border: 1px solid;
+        width: 48%;
+        height: 100%;
+        text-align: center;
+        line-height: $width / 2;
+        font-size: $width / 3.2;
+
+        @include box-sizing();
+        @include border-radius(5px);
+        @include noselect();
+    }
+    
+    .font-size-up {
+        margin-right: 4%;
+    }
+}
