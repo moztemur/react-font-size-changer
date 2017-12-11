@@ -2,6 +2,10 @@
 
 React Font Size Changer is a simple React component including two buttons to increae and decrease font size of a target text.
 
+## Install ##
+
+`npm install --save react-font-size-changer`
+
 ## Props ##
 
 ### targets ###
