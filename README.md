@@ -2,6 +2,19 @@
 
 React Font Size Changer is a simple React component including two buttons to increae and decrease font size of a target text.
 
+## Props ##
+
+### targets ###
+
+Array of CSS query selectors for target elements
+
+### options ###
+
+| option        | detail                                                 | default |
+| ------------- |:------------------------------------------------------:| ------- |
+| stepSize      | Number of px to change for each action (up/down)       | 2       |
+| range         | Max number of changes for both increment and decrement | 3       |
+
 ## Example Usage ##
 
 ```JavaScript
