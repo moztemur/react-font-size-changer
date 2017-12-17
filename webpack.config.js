@@ -21,7 +21,10 @@ var config = {
     }, {
       test: /\.scss$/,
       loaders: ['style', 'css', 'sass']
-    }],
+    }, {
+      test: /\.svg$/,
+      loader: 'babel!svg-react'
+    }]
   },
   resolve: {
     root: path.resolve('.'),
