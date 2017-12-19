@@ -2,6 +2,10 @@
   "name": "react-font-size-changer",
   "version": "0.0.2",
   "author": "Mahmut Oztemur",
+  "description": "Simple React component including two buttons to increae and decrease font size of a target text",
+  "keywords": ["react", "font size", "change", "changer", "scale", "fit"],
+  "homepage": "https://github.com/mhmtztmr/react-font-size-changer",
+  "bugs": "https://github.com/mhmtztmr/react-font-size-changer/issues",
   "license": "MIT",
   "scripts": {
     "build": "webpack",
