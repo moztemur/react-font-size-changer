@@ -187,7 +187,6 @@ class FontSizeChanger extends Component {
       <div className='font-size-changer' style={fontSizeChangerStyle}>
         {/* {
           label && <div className='font-size-changer-label'>{label}</div>
-
         } */}
         <div className="font-size-changer-buttons" style={fontSizeChangerStyle}>
           <FontSizeChangerButton
