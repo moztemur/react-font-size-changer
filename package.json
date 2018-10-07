@@ -21,7 +21,7 @@
     "prod": "webpack -p",
     "prepublish": "npm run build",
     "lint": "eslint ./src",
-    "test": "mocha -w test/helpers/browser.js test/**/*.spec.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "react": "^16.5.2",
