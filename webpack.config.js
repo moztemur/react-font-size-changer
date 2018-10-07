@@ -1,12 +1,10 @@
-var webpack = require('webpack');
 var path = require('path');
-var distPath = path.resolve(__dirname + '/dist');
 var libraryName = 'react-font-size-resizer';
 
 var config = {
-  entry: [__dirname + '/src/index.js'],
+  entry: './src/index',
   output: {
-    path: distPath,
+    path: path.resolve('dist'),
     filename: 'bundle.js',
     library: libraryName,
     libraryTarget: 'umd',
@@ -14,25 +12,22 @@ var config = {
   },
   devtool: 'source-map',
   module: {
-    loaders: [{
+    rules: [{
       test: /\.jsx?$/,
-      loaders: ['babel-loader'],
+      use: 'babel-loader',
       exclude: /node_modules/,
     }, {
       test: /\.scss$/,
-      loaders: ['style', 'css', 'sass']
+      use: [
+        'style-loader',
+        'css-loader',
+        'sass-loader'
+      ]
     }, {
       test: /\.svg$/,
-      loader: 'babel!svg-react'
+      use: 'babel!svg-react-loader'
     }]
   },
-  resolve: {
-    root: path.resolve('.'),
-    extensions: ['', '.js'],
-  },
-  plugins: [
-    new webpack.optimize.DedupePlugin()
-  ],
   node: {
     global: false
   }
