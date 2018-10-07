@@ -35,7 +35,7 @@ Array of CSS query selectors for target elements
 
 ```JavaScript
 import React, { Component } from 'react';
-import { FontSizeChanger } from 'react-font-size-changer';
+import FontSizeChanger from 'react-font-size-changer';
 
 class App extends Component {
   render() {
