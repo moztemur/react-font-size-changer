@@ -21,7 +21,9 @@
     "prod": "webpack -p",
     "prepublish": "npm run build",
     "lint": "eslint ./src",
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "react": "^16.5.2",
@@ -45,6 +47,12 @@
     "svg-react-loader": "^0.4.5",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9"
+    "webpack-dev-server": "^3.1.9",
+    "travis-deploy-once": "^5.0.9",
+    "semantic-release": "^15.9.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhmtztmr/react-font-size-changer.git"
   }
 }
