@@ -1,6 +1,6 @@
 {
   "name": "react-font-size-changer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Mahmut Oztemur",
   "description": "Simple React component including two buttons to increae and decrease font size of a target text",
   "keywords": [
