@@ -40,7 +40,7 @@ class FontSizeChanger extends Component {
     };
   }
 
-  applyFontSize(el, up) {
+  applyFontSize(el) {
     const { stepSize } = this.state.options;
     const { changeDirection } = this.state;
     const change = changeDirection === CHANGE_DIRECTION.UP ? stepSize : stepSize * (-1);
