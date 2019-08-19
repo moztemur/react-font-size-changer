@@ -5,7 +5,7 @@ React Font Size Changer is a simple React component including two buttons to inc
 ![](https://img.shields.io/npm/v/react-font-size-changer.svg) ![](https://img.shields.io/travis/mhmtztmr/react-font-size-changer.svg)
 
 
-[Live Demo](https://mhmtztmr.github.io/react-font-size-changer/demo/)
+[Live Demo](https://moztemur.github.io/react-font-size-changer/demo/)
 
 ## Install ##
 
@@ -23,6 +23,16 @@ Array of CSS query selectors for target elements
 | ------------- |:------------------------------------------------------:| ------- |
 | stepSize      | Number of px to change for each action (up/down)       | 2       |
 | range         | Max number of changes for both increment and decrement | 3       |
+
+### onChange ###
+
+Handle font size change. Triggered each target element separately.
+
+| param         | detail                                                 |
+| ------------- |:------------------------------------------------------:|
+| element       | DOM element whose font size has changed                |
+| newValue      | New font size for the element                          |
+| oldValue      | Old font size for the element                          |
 
 ### customButtons ###
 
@@ -46,6 +56,9 @@ class App extends Component {
       <div className="app">
         <FontSizeChanger
           targets={['#target .content']}
+          onChange={(element, newValue, oldValue) => {
+            console.log(element, newValue, oldValue);
+          }}
           options={{
             stepSize: 2,
             range: 3
