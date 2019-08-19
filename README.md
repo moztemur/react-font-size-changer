@@ -5,7 +5,7 @@ React Font Size Changer is a simple React component including two buttons to inc
 ![](https://img.shields.io/npm/v/react-font-size-changer.svg) ![](https://img.shields.io/travis/mhmtztmr/react-font-size-changer.svg)
 
 
-[Live Demo](https://mhmtztmr.github.io/react-font-size-changer/demo/)
+[Live Demo](https://moztemur.github.io/react-font-size-changer/demo/)
 
 ## Install ##
 
