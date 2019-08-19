@@ -17,12 +17,6 @@ React Font Size Changer is a simple React component including two buttons to inc
 
 Array of CSS query selectors for target elements
 
-| param         | detail                                                 |
-| ------------- |:------------------------------------------------------:|
-| element       | DOM element whose font size has changed                |
-| newValue      | New font size for the element                          |
-| oldValue      | Old font size for the element                          |
-
 ### options ###
 
 | property      | detail                                                 | default |
@@ -33,6 +27,12 @@ Array of CSS query selectors for target elements
 ### onChange ###
 
 Handle font size change. Triggered each target element separately.
+
+| param         | detail                                                 |
+| ------------- |:------------------------------------------------------:|
+| element       | DOM element whose font size has changed                |
+| newValue      | New font size for the element                          |
+| oldValue      | Old font size for the element                          |
 
 ### customButtons ###
 
