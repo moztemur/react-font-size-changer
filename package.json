@@ -17,7 +17,7 @@
   "main": "dist/bundle.js",
   "scripts": {
     "build": "webpack --mode production",
-    "demo": "webpack --mode production --config webpack.demo.config.js",
+    "demo": "webpack --mode development --config webpack.demo.config.js",
     "prod": "webpack -p",
     "prepublish": "npm run build",
     "lint": "eslint ./src --fix",
@@ -55,13 +55,13 @@
     "react-fontawesome": "^1.6.1",
     "react-highlight": "^0.12.0",
     "sass-loader": "^7.1.0",
-    "semantic-release": "^15.9.17",
+    "semantic-release": "^15.13.22",
     "style-loader": "^0.23.0",
-    "svg-react-loader": "^0.4.5",
+    "svg-react-loader": "^0.4.6",
     "travis-deploy-once": "^5.0.9",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9"
+    "webpack-dev-server": "^3.8.0"
   },
   "repository": {
     "type": "git",
