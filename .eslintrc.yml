@@ -19,5 +19,6 @@ parserOptions:
 globals:
   document: true
   window: true
+  console: true
 env:
   es6: true
