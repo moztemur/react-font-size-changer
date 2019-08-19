@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FontSizeChanger } from '../../../dist/bundle';
+import FontSizeChanger from '../../../dist/bundle';
 import FontAwesome from 'react-fontawesome';
 import Highlight from 'react-highlight';
 

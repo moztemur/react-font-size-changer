@@ -11,6 +11,7 @@ const defaultButtonsMargin = 4;
 class FontSizeChanger extends Component {
   constructor() {
     super();
+    this.handleChange.bind(this);
     this.setChangeDirection.bind(this);
     this.state = {
       options: {
@@ -20,6 +21,13 @@ class FontSizeChanger extends Component {
       changeCount: 0,
       changeDirection: null
     };
+  }
+
+  handleChange(element, newSize, oldSize) {
+    if (this.props.onChange) {
+      const { onChange } = this.props;
+      onChange(element, newSize, oldSize);
+    }
   }
 
   componentDidMount() {
@@ -49,6 +57,10 @@ class FontSizeChanger extends Component {
     const newFontSize = value + change;
 
     el.style.fontSize = newFontSize + 'px';
+
+    if (newFontSize !== value) {
+      this.handleChange(el, newFontSize, value);
+    }
   }
 
   iterateChildren(element) {
