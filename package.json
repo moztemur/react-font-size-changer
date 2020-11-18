@@ -55,7 +55,7 @@
     "react-fontawesome": "^1.6.1",
     "react-highlight": "^0.12.0",
     "sass-loader": "^7.1.0",
-    "semantic-release": "^15.13.22",
+    "semantic-release": "^17.2.3",
     "style-loader": "^0.23.0",
     "svg-react-loader": "^0.4.6",
     "travis-deploy-once": "^5.0.9",
